@@ -21,9 +21,11 @@ from (select c.communication_id,
       ) as tmp
 where session_date_time < communication_date_time
 """
+
 GET_ALL_SESSIONS_QUERY = """
 SELECT * FROM web_data.sessions;
 """
+
 GET_ALL_COMMUNICATIONS_QUERY = """
 SELECT * FROM web_data.communications;
 """
